@@ -23,9 +23,9 @@ const wallets: (WalletModule | WalletInitOptions)[] = [
   { walletName: "metamask" },
   {
     walletName: "walletConnect",
-    networkId,
+    networkName,
     rpc: {
-      [networkId]: process.env.NEXT_PUBLIC_RPC_URL ?? "",
+      [networkName]: process.env.NEXT_PUBLIC_RPC_URL ?? "",
     },
   },
 ];
